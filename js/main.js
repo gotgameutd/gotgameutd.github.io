@@ -179,3 +179,15 @@ mainApp.controller('faqController', function ($scope) {
     ]
   };
 })
+
+mainApp.controller('introController', function ($scope){
+  $scope.intro = {};
+  $scope.intro.rightNow = function(){
+    return new Date();
+  }
+
+  $scope.intro.isOpen = function(){
+    return new Date('2019-03-20T00:00:00') > $scope.intro.rightNow();
+  }
+})
+
