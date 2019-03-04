@@ -201,7 +201,7 @@
     <!--==========================
       Sponsors Section
     ============================-->
-    <section id="friends" class="section-with-bg">
+    <section id="friends" class="section-with-bg" ng-controller="cFriendController">
 
       <div class="container">
         <div class="section-header">
@@ -210,10 +210,10 @@
 
         <div class="row no-gutters sponsors-wrap clearfix">
 
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <a target="_blank" href="http://www.sector5digital.com">
-              <div class="friend-logo">
-                <img src="img/sponsors/sector5.jpg" class="img-fluid" alt="">
+          <div class="col-lg-3 col-md-4 col-xs-6" ng-repeat="friend in sponsors">
+            <a target="_blank" href="{{friend.url}}">
+              <div class="friend-logo" style="background:{{friend.background}};">
+                <img src="img/sponsors/{{ friend.image }}" class="img-fluid" alt="{{ friend.name }}">
               </div>
             </a>
           </div>
