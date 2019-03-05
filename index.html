@@ -222,38 +222,17 @@
 
       </div>
 
-      <div class="container">
+      <div class="container" ng-controller="aFriendController">
         <div class="section-header">
           <h2>Partners</h2>
         </div>
 
         <div class="row no-gutters sponsors-wrap clearfix">
 
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <a target="_blank" href="http://xrsutd.org">
-              <div class="friend-logo">
-                <img src="img/partners/XRS.png" class="img-fluid" alt="">
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <a target="_blank" href="http://utdsgda.com">
-              <div class="friend-logo">
-                <img src="img/partners/SGDA.png" class="img-fluid" alt="">
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <a target="_blank" href="http://utdmaker.space">
-              <div class="friend-logo">
-                <img src="img/partners/Makerspace.png" class="img-fluid" alt="">
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <a target="_blank" href="https://utdeclub.com/">
-              <div class="friend-logo">
-                <img src="img/partners/eclub.png" class="img-fluid" alt="">
+          <div class="col-lg-3 col-md-4 col-xs-6" ng-repeat="friend in partners">
+            <a target="_blank" href="{{ friend.url }}">
+              <div class="friend-logo" style="background: {{ friend.background || 'white' }};">
+                <img src="img/partners/{{ friend.image }}" class="img-fluid" alt="">
               </div>
             </a>
           </div>
