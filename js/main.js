@@ -194,6 +194,7 @@ mainApp.controller('introController', function ($scope){
 mainApp.controller('cFriendController', function($scope){
   $scope.sponsors = [
     {"name": "Sector 5 Digital", "url": "http://www.sector5digital.com", "image": "sector5.jpg" , "background": "black"},
+    {"name": "HTC Vive", "url" : "https://www.vive.com/us/", "image": "Vive.png"},
     {"name": "Immosis", "url": "https://immosis.com/", "image": "immosis.png", "background": "black"},
 
   ];
