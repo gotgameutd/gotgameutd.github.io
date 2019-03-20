@@ -187,7 +187,7 @@ mainApp.controller('introController', function ($scope){
   }
 
   $scope.intro.isOpen = function(){
-    return new Date('2019-03-20T00:00:00') > $scope.intro.rightNow();
+    return new Date('2019-03-23T00:00:00') > $scope.intro.rightNow();
   }
 })
 

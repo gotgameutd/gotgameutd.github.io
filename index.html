@@ -68,9 +68,9 @@
       <h1 class="mb-4 pb-0">Got Game?</h1>
       <p class="mb-4 pb-0">Join us for a GameJam on March 30th-31st 9am-2pm @ UT Dallas </p>
 
-      <a ng-show="intro.isOpen()" href="https://atechadventurer.typeform.com/to/bhhsqU"
+      <a ng-show="intro.isOpen()" ng-cloak href="https://atechadventurer.typeform.com/to/bhhsqU"
         class="about-btn scrollto">Registration is closing soon</a>
-      <a ng-show="!intro.isOpen()" class="about-btn">Registration is closed</a>
+      <a ng-show="!intro.isOpen()" ng-cloak class="about-btn">Registration is closed</a>
 
 
     </div>
@@ -167,9 +167,9 @@
           <div role="tabpanel" class="col-lg-9 tab-pane fade show active" id="day-1">
 
             <div class="row schedule-item" ng-repeat="(index, key) in schedule.day1.events">
-              <div class="col-md-2"><time>{{ key.time }}</time></div>
+              <div class="col-md-2"><time ng-bind=key.time></time></div>
               <div class="col-md-10">
-                <h4>{{ key.title }}</h4>
+                <h4 ng-bind=key.title></h4>
                 <p></p>
               </div>
             </div>
@@ -257,11 +257,10 @@
           <div class="col-lg-9">
             <ul id="faq-list">
               <li ng-repeat="(index, item) in FAQ.entries">
-                <a data-toggle="collapse" class="collapsed" href="{{ '#faq' + index }}">{{ item.q }} <i
+                <a data-toggle="collapse" class="collapsed" href="{{ '#faq' + index }}" ng-bind=item.q><i
                     class="fa fa-minus-circle"></i></a>
                 <div id="{{ 'faq' + index }}" class="collapse" data-parent="#faq-list">
-                  <p>
-                    {{ item.a }}
+                  <p ng-bind="item.a">
                   </p>
                 </div>
               </li>
