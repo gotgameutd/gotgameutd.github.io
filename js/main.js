@@ -187,7 +187,7 @@ mainApp.controller('introController', function ($scope){
   }
 
   $scope.intro.isOpen = function(){
-    return new Date('2019-03-20T00:00:00') > $scope.intro.rightNow();
+    return new Date('2019-03-23T00:00:00') > $scope.intro.rightNow();
   }
 })
 
@@ -195,7 +195,7 @@ mainApp.controller('cFriendController', function($scope){
   $scope.sponsors = [
     {"name": "Sector 5 Digital", "url": "http://www.sector5digital.com", "image": "sector5.jpg" , "background": "black"},
     {"name": "Boss Fight", "url": "http://bossfightentertainment.com/", "image": "boss-fight.svg", "background": "#191919"},
-    {"name": "HTC Vive", "url" : "https://www.vive.com/us/", "image": "Vive.png"},
+    {"name": "HTC Vive", "url" : "https://www.vive.com/us/", "image": "vive.png"},
     {"name": "Immosis", "url": "https://immosis.com/", "image": "immosis.png", "background": "black"},
 
   ];
