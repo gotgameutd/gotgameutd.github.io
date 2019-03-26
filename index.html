@@ -204,12 +204,12 @@
 
       <div class="container">
         <div class="section-header">
-          <h2>Diamond Sponsors</h2>
+          <h2>Diamond Sponsor</h2>
         </div>
         
         <div class="row no-gutters sponsors-wrap clearfix">
 
-          <div class="col-lg-3 col-md-4 col-xs-6" ng-repeat="friend in diamondSponsors">
+          <div class="col-lg-3 col-md-4 col-xs-6 mx-auto" ng-repeat="friend in diamondSponsors">
             <a target="_blank" href="{{friend.url}}">
               <div class="friend-logo" style="background:{{friend.background}};">
                 <img src="img/sponsors/{{ friend.image }}" class="img-fluid" alt="{{ friend.name }}">
@@ -225,18 +225,19 @@
 
       <div class="container">
         <div class="section-header">
-          <h2>Gold Sponsors</h2>
+          <h2>Gold Sponsor</h2>
         </div>
-        
-        <div class="row no-gutters sponsors-wrap clearfix">
 
-          <div class="col-lg-3 col-md-4 col-xs-6" ng-repeat="friend in goldSponsors">
+        <div class="row no-gutters sponsors-wrap clearfix">
+          
+          <div class="col-lg-3 col-md-4 col-xs-6 mx-auto"  ng-repeat="friend in goldSponsors">
             <a target="_blank" href="{{friend.url}}">
               <div class="friend-logo" style="background:{{friend.background}};">
                 <img src="img/sponsors/{{ friend.image }}" class="img-fluid" alt="{{ friend.name }}">
               </div>
             </a>
           </div>
+        
 
         </div>
 
@@ -251,7 +252,7 @@
         
         <div class="row no-gutters sponsors-wrap clearfix">
 
-          <div class="col-lg-3 col-md-4 col-xs-6" ng-repeat="friend in sponsors">
+          <div class="col-lg-3 col-md-4 col-xs-6 mx-auto" ng-repeat="friend in sponsors">
             <a target="_blank" href="{{friend.url}}">
               <div class="friend-logo" style="background:{{friend.background}};">
                 <img src="img/sponsors/{{ friend.image }}" class="img-fluid" alt="{{ friend.name }}">
@@ -270,7 +271,7 @@
 
         <div class="row no-gutters sponsors-wrap clearfix">
 
-          <div class="col-lg-3 col-md-4 col-xs-6" ng-repeat="friend in partners">
+          <div class="col-lg-3 col-md-4 col-xs-6 mx-auto" ng-repeat="friend in partners">
             <a target="_blank" href="{{ friend.url }}">
               <div class="friend-logo" style="background: {{ friend.background || 'white' }};">
                 <img src="img/partners/{{ friend.image }}" class="img-fluid" alt="">
