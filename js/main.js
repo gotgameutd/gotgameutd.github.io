@@ -211,7 +211,5 @@ mainApp.controller('aFriendController', function($scope){
     {"name": "Makerspace", "url": "https://utdmaker.space", "image": "Makerspace.png"},
     {"name": "SGDA", "url": "https://utdsgda.com", "image": "SGDA.png", "background": "light-grey"},
     {"name": "E-Club", "url": "https://utdeclub.com/", "image": "eclub.png"},
-    {"name": "UTD Esports", "url": "https://utdesports.com/", "image": "utdEsports.png", "background": "#C75B12"},
-
   ]
 })
